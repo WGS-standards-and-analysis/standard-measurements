@@ -7,12 +7,9 @@ These are the scripts to calculate standard metrics in any one language.
 
 For any measurement, the script is named after its name (e.g., `N50.pl`). Within each script, the actual measurement is encapsulated in its own function which could be used in another script. The measurement function should be well commented.  There is at least one unit test per script in the tests directory.
 
-### Current languages
-
-* python
-* perl
-
 ### Current scripts
+
+Language icons appear next to each script to indicate availability
 
 * N50 ![python](images/python_icon.png) ![perl](images/perl_icon.png)
 
