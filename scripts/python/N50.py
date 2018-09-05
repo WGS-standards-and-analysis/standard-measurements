@@ -5,6 +5,8 @@ import sys
 from Bio import SeqIO
 import argparse
 
+# Find the N50: the contig size at half the expected genome
+# size
 def N50(fasta, expectedGenomeSize):
   lengths=[]
   with open(fasta, "rU") as handle:

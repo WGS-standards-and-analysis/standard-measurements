@@ -1,5 +1,7 @@
 #!/usr/bin/env perl
 
+# Author: Lee Katz <gzu2@cdc.gov>
+
 use strict;
 use warnings;
 use Bio::SeqIO;
