@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # Author: Lee Katz <gzu2@cdc.gov>
 
 import sys
