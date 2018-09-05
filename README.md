@@ -14,7 +14,7 @@ For any measurement, the script is named after its name (e.g., `N50.pl`). Within
 
 ### Current scripts
 
-* N50 [python](images/python_icon.png) [perl](images/perl_icon.png)
+* N50 ![python](images/python_icon.png) ![perl](images/perl_icon.png)
 
 ## Contributing
 
