@@ -18,6 +18,15 @@ Language icons appear next to each script to indicate availability
 
 Please add a github issue detailing what you would like to contribute, and we will move the discussion there. Please keep in mind our ideals such as clear code and unit testing.
 
-## tests directory
+### Some specific ideals
 
-Each measurement or each script has its own unit test to make sure that everything is correct.
+* Clear coding
+  * Comments
+  * Combined commands on multiple lines are not good
+  * The metric must be self-contained in a function
+* Must be thread-compatible. In other words, any two instances of the same script cannot collide.
+* Standard bioinformatics libraries are allowed: BioPerl, BioPython
+* Python
+  * must be compatible with v3.7 or above
+* Supply a clear and distinct unit test.  Some test data are under `data` under the tests directory.
+
