@@ -6,9 +6,9 @@ matrix:
   include:
     - os: linux
       dist: trusty
-    #- os: linux
-    #  dist: precise
-    #- os: osx
+    - os: linux
+      dist: precise
+    - os: osx
   python: 3.7
 before_install:
   # Install very specific versions of libraries
