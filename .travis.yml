@@ -16,6 +16,7 @@ before_install:
   # because this project relies on versioning.
   - pip install --user biopython==1.72
   - curl -L https://cpanmin.us/ -o $HOME/cpanm
+  - chmod +x $HOME/cpanm
   - yes no | $HOME/cpanm --force --notest -l $HOME "C/CJ/CJFIELDS/BioPerl-1.007001.tar.gz"
   - export PERL5LIB=$PERL5LIB:$HOME/lib/perl5
 
