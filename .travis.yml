@@ -17,5 +17,5 @@ before_install:
   - yes no | cpanm -l $HOME "C/CJ/CJFIELDS/BioPerl-1.007001.tar.gz"
   - export PERL5LIB=$PERL5LIB:$HOME/lib/perl5
 
-script: alltests.sh
+script: alltests.sh 
 
