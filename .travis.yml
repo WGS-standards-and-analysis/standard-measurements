@@ -1,0 +1,21 @@
+language: bash
+
+# Try a large OS matrix because the goal is compatibility
+# https://docs.travis-ci.com/user/reference/overview/
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+    #- os: linux
+    #  dist: precise
+    #- os: osx
+  python: 3.7
+before_install:
+  # Install very specific versions of libraries
+  # because this project relies on versioning.
+  - pip install biopython==1.72
+  - yes no | cpanm -l $HOME "C/CJ/CJFIELDS/BioPerl-1.007001.tar.gz"
+  - export PERL5LIB=$PERL5LIB:$HOME/lib/perl5
+
+script: alltests.sh
+
