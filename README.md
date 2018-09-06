@@ -30,3 +30,4 @@ Please add a github issue detailing what you would like to contribute, and we wi
   * must be compatible with v3.7 or above
 * Supply a clear and distinct unit test.  Some test data are under `data` under the tests directory.
 
+[![Build Status](https://travis-ci.com/WGS-standards-and-analysis/standard-measurements.svg?branch=master)](https://travis-ci.com/WGS-standards-and-analysis/standard-measurements)
