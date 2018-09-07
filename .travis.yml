@@ -16,7 +16,7 @@ before_install:
   # Install very specific versions of libraries
   # because this project relies on versioning.
   - pwd
-  - pip install --user biopython==1.72
+  - python3 -m pip install --user biopython==1.72
   - curl -L https://cpanmin.us/ -o ./cpanm
   - chmod -v +x ./cpanm
   - yes no | ./cpanm --force --notest -l . "C/CJ/CJFIELDS/BioPerl-1.007001.tar.gz"
