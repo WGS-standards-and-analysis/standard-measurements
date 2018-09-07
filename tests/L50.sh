@@ -12,7 +12,7 @@ trap ' { rm -rf $tmpdir; } ' EXIT
 gunzip -c $basedir/data/2011C-3609.fasta.gz > $tmpdir/in.fasta
 
 # Run L50
-pythonL50=$(python $basedir/../scripts/python/L50.py $tmpdir/in.fasta)
+pythonL50=$(python3 $basedir/../scripts/python/L50.py $tmpdir/in.fasta)
 
 # Test L50 values
 if [ "$pythonL50" -ne "$L50" ]; then
