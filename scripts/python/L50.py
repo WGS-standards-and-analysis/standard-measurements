@@ -1,4 +1,4 @@
-#/usr/bin/env/ python3
+#!/usr/bin/env/ python3
 # Author: Dillon Barker <dillon.barker@canada.ca>
 
 from Bio import SeqIO
