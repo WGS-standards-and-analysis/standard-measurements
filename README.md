@@ -26,8 +26,11 @@ Please add a github issue detailing what you would like to contribute, and we wi
   * The metric must be self-contained in a function
 * Must be thread-compatible. In other words, any two instances of the same script cannot collide.
 * Standard bioinformatics libraries are allowed: BioPerl, BioPython
-* Python
-  * must be compatible with v3.7 or above
+* Language specific ideals
+  * Python
+    * must be compatible with v3.7 or above
+  * Perl
+    * must be compatible with v5.26 or above
 * Supply a clear and distinct unit test.  Some test data are under `data` under the tests directory.
 
 [![Build Status](https://travis-ci.com/WGS-standards-and-analysis/standard-measurements.svg?branch=master)](https://travis-ci.com/WGS-standards-and-analysis/standard-measurements)
