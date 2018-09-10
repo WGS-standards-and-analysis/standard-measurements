@@ -29,7 +29,7 @@ Please add a github issue detailing what you would like to contribute, and we wi
 * Standard bioinformatics libraries are allowed: BioPerl, BioPython
 * Language specific ideals
   * Python
-    * must be compatible with v3.7 or above
+    * must be compatible with v3.6 or above
   * Perl
     * must be compatible with v5.26 or above
 * Supply a clear and distinct unit test.  Some test data are under `data` under the tests directory.

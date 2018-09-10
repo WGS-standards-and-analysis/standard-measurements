@@ -1,26 +1,37 @@
-language: bash
+language: python
 
 # Try a large OS matrix because the goal is compatibility
 # https://docs.travis-ci.com/user/reference/overview/
+
+python:
+  - "3.6"
+
+perl:
+  - "5.26-shrplib"
+
+os:
+  - linux
+
 matrix:
   include:
-    - os: linux
-      dist: precise
-    - os: linux
-      dist: trusty
-    - os: linux
-      dist: xenial
-  python: "3.7"
-  perl:   "5.26-shrplib"
+    - dist: precise
+
+    - dist: trusty
+
+    - dist: xenial
+
+
 before_install:
   # Install very specific versions of libraries
   # because this project relies on versioning.
   - pwd
-  - python3 -m pip install --user biopython==1.72
   - curl -L https://cpanmin.us/ -o ./cpanm
   - chmod -v +x ./cpanm
   - yes no | ./cpanm --force --notest -l . "C/CJ/CJFIELDS/BioPerl-1.007001.tar.gz"
   - export PERL5LIB=$PERL5LIB:$(pwd)/lib/perl5
+
+install:
+  - pip install biopython==1.72
 
 script: bash tests/alltests.sh 
 

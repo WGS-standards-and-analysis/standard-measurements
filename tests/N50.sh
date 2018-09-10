@@ -14,7 +14,7 @@ gunzip -c $basedir/data/2011C-3609.fasta.gz > $tmpdir/in.fasta
 
 # Run N50
 perlN50=$(perl $basedir/../scripts/perl/N50.pl $tmpdir/in.fasta 5412686)
-pythonN50=$(python $basedir/../scripts/python/N50.py $tmpdir/in.fasta 5412686)
+pythonN50=$(python3 $basedir/../scripts/python/N50.py $tmpdir/in.fasta 5412686)
 
 # Test N50 values
 if [ "$perlN50" -ne "$N50" ]; then
