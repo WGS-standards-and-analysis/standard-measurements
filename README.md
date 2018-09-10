@@ -11,6 +11,7 @@ For any measurement, the script is named after its name (e.g., `N50.pl`). Within
 
 Language icons appear next to each script to indicate availability
 
+* L50 ![python](images/python_icon.png)
 * N50 ![python](images/python_icon.png) ![perl](images/perl_icon.png)
 * Average fastq quality score ![perl](images/perl_icon.png)
 
@@ -28,7 +29,7 @@ Please add a github issue detailing what you would like to contribute, and we wi
 * Standard bioinformatics libraries are allowed: BioPerl, BioPython
 * Language specific ideals
   * Python
-    * must be compatible with v3.7 or above
+    * must be compatible with v3.6 or above
   * Perl
     * must be compatible with v5.26 or above
 * Supply a clear and distinct unit test.  Some test data are under `data` under the tests directory.
