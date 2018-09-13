@@ -11,7 +11,7 @@ For any measurement, the script is named after its name (e.g., `N50.pl`). Within
 
 Language icons appear next to each script to indicate availability
 
-* L50 ![python](images/python_icon.png)
+* L50 ![python](images/python_icon.png) ![perl](images/perl_icon.png)
 * N50 ![python](images/python_icon.png) ![perl](images/perl_icon.png)
 * Average fastq quality score ![python](images/python_icon.png) ![perl](images/perl_icon.png)
 
